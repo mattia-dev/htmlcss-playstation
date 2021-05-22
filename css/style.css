@@ -1,0 +1,34 @@
+/* utility classes */
+[class^="jumbo-"] {
+    background-size: cover;
+    height: 600px;
+    color: white;
+}
+
+[class^="jumbo-"] img {
+    width: 60%;
+}
+
+[class^="jumbo-"] h2 {
+    font-size: 40px;
+
+    margin: 30px 0;
+}
+
+[class^="jumbo-"] p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+[class^="jumbo-"] button {
+    font-size: 16px;
+    background-color: #cd3d0f;
+    border-color: #cd3d0f;
+    border-radius: 25px;
+}
+/* end of utility classes */
+
+.jumbo-1 {
+    background-image: url(../img/jumbo-bg.png);
+    padding-top: 200px;
+}
