@@ -1,4 +1,9 @@
 /* utility classes */
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
 [class^="jumbo-"] {
     background-size: cover;
     height: 600px;
@@ -7,12 +12,7 @@
 
 [class^="jumbo-"] img {
     width: 60%;
-}
-
-[class^="jumbo-"] h2 {
-    font-size: 40px;
-
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 [class^="jumbo-"] p {
@@ -25,6 +25,23 @@
     background-color: #cd3d0f;
     border-color: #cd3d0f;
     border-radius: 25px;
+}
+
+[class^="game-box-"] {
+    margin: 12px 0;
+    border-radius: 25px;
+    border: 2px solid white
+    /* overflow: hidden; */
+}
+
+[class^="game-box-"] img {
+    width: 100%;
+    border-radius: 25px;
+    border: 5px solid white;
+}
+
+[class^="game-box-"]:hover {
+    border: 2px solid blue;
 }
 /* end of utility classes */
 
