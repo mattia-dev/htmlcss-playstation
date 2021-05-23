@@ -100,6 +100,8 @@ section img {
 }
 
 .fourth-section figure {
+    height: 100%;
+    padding-bottom: 30px;
     opacity: 0.75;
     border-bottom: 2px solid white;
     transition: all 0.25s ease-in-out;
@@ -117,7 +119,13 @@ section img {
 .fourth-section figcaption {
     color: #1f1f1f;
     font-size: 16px;
-    margin-bottom: 30px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .fourth-section figcaption {
+        display: block;
+    }
 }
 
 .jumbo-2 {
