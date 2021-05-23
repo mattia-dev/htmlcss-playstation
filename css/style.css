@@ -94,3 +94,24 @@ section img {
     font-weight: 500;
     color: #0072ce;
 }
+
+.fourth-section figure {
+    opacity: 0.75;
+    border-bottom: 2px solid white;
+    transition: all 0.25s ease-in-out;
+}
+
+.fourth-section figure:hover {
+    border-bottom: 2px solid #0072ce;
+    opacity: 1;
+}
+
+.fourth-section img {
+    width: 55%;
+}
+
+.fourth-section figcaption {
+    color: #1f1f1f;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
