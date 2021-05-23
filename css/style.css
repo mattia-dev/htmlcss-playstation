@@ -1,6 +1,6 @@
 /* utility classes */
 section {
-    margin-bottom: 60px;
+    padding: 30px 0;
 }
 
 h2 {
@@ -14,8 +14,13 @@ p {
 
 [class^="jumbo-"] {
     background-size: cover;
+    background-position: center;
     height: 600px;
     color: white;
+}
+
+[class^="jumbo-"] > .container, [class^="jumbo-"] .row {
+    height: 100%;
 }
 
 [class^="jumbo-"] img {
@@ -28,6 +33,7 @@ p {
 }
 
 [class^="jumbo-"] button {
+    width: 120px;
     font-size: 16px;
     background-color: #cd3d0f;
     border-color: #cd3d0f;
@@ -42,8 +48,7 @@ p {
 [class^="game-box-"] {
     margin: 12px 0;
     border-radius: 25px;
-    border: 2px solid white
-    /* overflow: hidden; */
+    border: 2px solid white;
 }
 
 [class^="game-box-"] img {
@@ -81,8 +86,7 @@ section img {
 
 .jumbo-1 {
     background-image: url(../img/jumbo-bg.png);
-    padding-top: 200px;
-    margin-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .second-section.text-block {
@@ -114,4 +118,8 @@ section img {
     color: #1f1f1f;
     font-size: 16px;
     margin-bottom: 30px;
+}
+
+.jumbo-2 {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
