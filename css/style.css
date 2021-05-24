@@ -149,6 +149,7 @@ nav {
     margin: 12px 0;
     border-radius: 25px;
     border: 2px solid white;
+    transition: all 0.25s ease-in-out;
 }
 
 .first-section [class^="game-box-"]:hover {
@@ -159,7 +160,7 @@ nav {
     border: 5px solid white;
 }
 
-/* second section */
+/* second section and third section */
 .second-section {
     text-align: center;
 }
@@ -192,10 +193,6 @@ nav {
     opacity: 1;
 }
 
-.fourth-section img {
-    width: 55%;
-}
-
 .fourth-section figcaption {
     color: #1f1f1f;
     font-size: 16px;
@@ -203,6 +200,10 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+    .fourth-section img {
+    width: 60%;
+    }
+
     .fourth-section figcaption {
         display: block;
     }
@@ -231,4 +232,8 @@ nav {
 .sixth-section, .eighth-section {
     text-align: center;
     padding-top: 60px;
+}
+
+.seventh-section figure {
+    height: 100%;
 }
