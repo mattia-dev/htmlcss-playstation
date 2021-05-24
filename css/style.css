@@ -1,4 +1,18 @@
 /* utility classes */
+.button-circle {
+    padding: 2px;
+    width: fit-content;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all 0.25s ease-in-out;
+}
+
+.button-circle:hover {
+    width: fit-content;
+    border-radius: 25px;
+    border: 2px solid;
+}
+
 section {
     padding: 30px 0;
 }
@@ -28,26 +42,43 @@ p {
     height: 100%;
 }
 
-[class^="jumbo-"] img {
+[class*="jumbo-"] img {
     width: 60%;
     margin-bottom: 30px;
 }
 
-[class^="jumbo-"] p {
+[class*="jumbo-"] p {
     font-size: 16px;
+}
+
+[class*="jumbo-"] button {
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
 }
 
 [class^="jumbo-"] button {
     width: 120px;
-    font-size: 16px;
     background-color: #cd3d0f;
     border-color: #cd3d0f;
-    border-radius: 25px;
 }
 
-[class^="jumbo-"] button:hover {
+[class^="jumbo-"] .button-circle:hover button {
     background-color: #b83408;
     border-color: #b83408;
+}
+
+[class^="jumbo-"] .button-circle:hover {
+    border-color: #b83408;
+}
+
+[class^="small-jumbo-"] {
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+[class^="small-jumbo-"] button {
+    width: 210px;
 }
 
 [class^="game-box-"] img {
@@ -59,17 +90,29 @@ p {
     font-size: 20px;
 }
 
-.section-button {
+.section-button button {
     font-size: 16px;
     color: white;
     font-weight: 700;
     background-color: #2d64e6;
     border-color: #2d64e6;
     border-radius: 25px;
+    transition: all 0.25s ease-in-out;
 }
 
-section img {
+.section-button:hover button {
+    background-color: #1c54d6;
+    border-color: #1c54d6;
+    
+}
+
+[class*="-section"] .button-circle:hover {
+    border-color: #1c54d6;
+}
+
+section img, [class^="small-jumbo-"] .featured-games {
     width: 100%;
+    margin-bottom: 0;
 }
 /* end of utility classes */
 
@@ -134,11 +177,20 @@ nav {
     border-radius: 25px;
 }
 
+.right-side .button-circle:hover button {
+    background-color: #363636;
+    border-color: #363636;
+}
+
+.right-side .button-circle:hover {
+    border-color: #363636;
+}
+
 .lens {
     width: 24px;
 }
 
-/* jumbo background */
+/* jumbo */
 .jumbo-1 {
     background-image: url(../img/jumbo-bg.png);
     padding-bottom: 60px;
@@ -150,10 +202,6 @@ nav {
     border-radius: 25px;
     border: 2px solid white;
     transition: all 0.25s ease-in-out;
-}
-
-.first-section [class^="game-box-"]:hover {
-    border: 2px solid blue;
 }
 
 .first-section img {
@@ -232,4 +280,57 @@ nav {
 .sixth-section, .eighth-section {
     text-align: center;
     padding-top: 60px;
+}
+
+/* seventh section */
+.discover-more {
+    margin-bottom: 30px;
+}
+
+/* small jumbo 1 */
+.small-jumbo-1 {
+    background-color: #bebcbb;
+}
+
+.small-jumbo-1 p {
+    color: #1f1f1f;
+}
+
+.small-jumbo-1 button, .small-jumbo-1 .button-circle:hover button {
+    color: #0072ce;
+    background-color: rgba(220,222,224,.9);
+    border-color: rgba(220,222,224,.9);
+}
+
+.small-jumbo-1 .button-circle:hover {
+    border-color: rgba(220,222,224,.9);
+}
+
+/* small jumbo 2 */
+.small-jumbo-2 {
+    background-color: #081331;
+}
+
+.small-jumbo-2 p {
+    color: #f5f5f5;
+}
+
+.small-jumbo-2 button, .small-jumbo-2 .button-circle:hover button {
+    color: #19191f;
+    background-color: white;
+    border-color: white;
+}
+
+.small-jumbo-2 .button-circle:hover {
+    border-color: white;
+}
+
+.featured-games {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .featured-games {
+        display: block;
+    }
 }
